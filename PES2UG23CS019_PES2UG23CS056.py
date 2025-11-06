@@ -376,10 +376,7 @@ def recommend_from_input(user_input, top_k=5):
 while True:
     user_query = input("\nEnter a story title or short description (or 'exit' to quit): ").strip()
     if user_query.lower() == "exit":
-        print("Goodbye! 👋")
+        print("Goodbye!")
         break
     if user_query:
         recommend_from_input(user_query)
-# Example usage:
-# recommend_from_input("Mirror Image")
-# recommend_from_input("scary haunted house with ghosts")
